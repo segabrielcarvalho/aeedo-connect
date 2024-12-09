@@ -11,6 +11,7 @@ Certifique-se de ter as seguintes ferramentas instaladas no seu ambiente:
 - [Git](https://git-scm.com/downloads)
 
 **Para Setup Local:**
+
 - [Node.js](https://nodejs.org/) com `npm`, `yarn` ou `pnpm`
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
@@ -20,12 +21,14 @@ Certifique-se de ter as seguintes ferramentas instaladas no seu ambiente:
 ## Passos Iniciais (Comuns a Todas as Plataformas)
 
 1. **Clone o repositório principal**:
+
    ```bash
    git clone https://github.com/segabrielcarvalho/aeedo-connect.git
    cd aeedo-connect
    ```
 
 2. **Verifique os arquivos de variáveis de ambiente**:
+
    - Acesse a pasta `envs/` e confira a existência dos arquivos `.env.example` e `.env.*.example`.
    - Esses arquivos servirão de base para configurar variáveis de ambiente dos componentes (API, Web, Doc, Admin).
 
@@ -45,14 +48,19 @@ Este script irá perguntar em qual plataforma você deseja rodar (Linux, macOS, 
 
 ### 2. Após a Execução
 
-Após o script finalizar o setup, navegue até o diretório do componente desejado dentro de `apps/` e execute o comando para iniciar o servidor de desenvolvimento:
+Após o script finalizar o setup:
 
-```bash
-cd apps/<nome_do_componente>
-$packageCommand run start:dev
-```
+1. Navegue até o diretório de cada componente dentro de `apps/`.
+2. Execute o comando para iniciar o servidor de desenvolvimento em cada componente:
 
-Substitua `<nome_do_componente>` pelo componente que deseja rodar, como `aeedo-connect-web`, `aeedo-connect-doc` ou `aeedo-connect-admin`.
+   ```bash
+   cd apps/<nome_do_componente>
+   pnpm run start:dev
+   ```
+
+   Substitua `<nome_do_componente>` pelo componente que deseja rodar, como `aeedo-connect-web`, `aeedo-connect-doc` ou `aeedo-connect-admin`.
+
+Certifique-se de realizar este processo para cada componente que deseja inicializar.
 
 ---
 
@@ -64,9 +72,11 @@ Por padrão, o Windows bloqueia a execução de scripts PowerShell não assinado
 
 1. Abra o **PowerShell** ou o **Windows Terminal** como administrador.
 2. Rode o comando:
+
    ```powershell
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
+
    - Digite "S" para confirmar.
 
 ### 2. Executando o Script de Setup no Windows
@@ -78,14 +88,23 @@ cd caminho\para\aeedo-connect
 .\scripts\setup-windows-native.ps1
 ```
 
-Este script fará perguntas semelhantes às do Linux/macOS, clonando os repositórios e instalando as dependências. Após finalizar o setup, navegue até a pasta do componente em `apps/` e execute o servidor de desenvolvimento:
+Este script fará perguntas semelhantes às do Linux/macOS, clonando os repositórios e instalando as dependências.
 
-```powershell
-cd apps\<nome_do_componente>
-$packageCommand run start:dev
-```
+### 3. Iniciando as Aplicações
 
-Substitua `<nome_do_componente>` pelo componente que deseja rodar.
+Após finalizar o setup:
+
+1. Navegue até o diretório de cada componente dentro de `apps/`.
+2. Execute o comando para iniciar o servidor de desenvolvimento em cada componente:
+
+   ```powershell
+   cd apps\<nome_do_componente>
+   pnpm run start:dev
+   ```
+
+   Substitua `<nome_do_componente>` pelo componente que deseja rodar.
+
+Certifique-se de realizar este processo para cada componente que deseja inicializar.
 
 ---
 
@@ -105,6 +124,7 @@ Após a execução (seja no Linux, macOS ou Windows), os serviços estarão disp
 - **envs/**: Arquivos de configuração para variáveis de ambiente.
 - **scripts/**: Contém scripts para automatizar o setup inicial.
 - **apps/**: Diretório que será criado pelo script, contendo os repositórios dos componentes clonados.
+- **documentação completa**: Toda a documentação detalhada do projeto está localizada no componente **Documentação** (dentro de `apps/aeedo-connect-doc`). Este é o ponto de referência principal para entender a arquitetura, fluxos e detalhes técnicos.
 
 ---
 
@@ -112,9 +132,11 @@ Após a execução (seja no Linux, macOS ou Windows), os serviços estarão disp
 
 - **Permissão negada para executar o script (Linux/macOS)**:
   Se receber um erro de permissão, rode:
+
   ```bash
   chmod +x ./scripts/setup-with-*.sh
   ```
+
   e então repita o comando de execução.
 
 - **Portas em uso**:
@@ -127,6 +149,6 @@ Após a execução (seja no Linux, macOS ou Windows), os serviços estarão disp
 
 ## Conclusão
 
-Seguindo os passos acima, seu ambiente de desenvolvimento estará pronto para uso tanto em Linux/macOS quanto em Windows. Em caso de problemas, abra uma issue no repositório do componente correspondente.
+Seguindo os passos acima, seu ambiente de desenvolvimento estará pronto para uso tanto em Linux/macOS quanto em Windows. Toda a documentação detalhada está no componente **Documentação**, dentro de `apps/aeedo-connect-doc`. Em caso de problemas, abra uma issue no repositório do componente correspondente.
 
 Bom desenvolvimento! 🚀
