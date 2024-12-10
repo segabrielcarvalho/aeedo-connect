@@ -117,6 +117,13 @@ Após a execução (seja no Linux, macOS ou Windows), os serviços estarão disp
 - **Admin**: `http://localhost:3003`
 - **API**: `http://localhost:3000`
 
+## Usuário Principal
+
+Para realizar login no painel administrativo, utilize as seguintes credenciais padrão:
+
+- **Usuário:** `admin@example.com.br`
+- **Senha:** `12345678`
+
 ---
 
 ## Estrutura do Projeto
@@ -124,7 +131,7 @@ Após a execução (seja no Linux, macOS ou Windows), os serviços estarão disp
 - **envs/**: Arquivos de configuração para variáveis de ambiente.
 - **scripts/**: Contém scripts para automatizar o setup inicial.
 - **apps/**: Diretório que será criado pelo script, contendo os repositórios dos componentes clonados.
-- **documentação completa**: Toda a documentação detalhada do projeto está localizada no componente **Documentação** (dentro de `apps/aeedo-connect-doc`). Este é o ponto de referência principal para entender a arquitetura, fluxos e detalhes técnicos.
+- **documentação completa**: Toda a documentação detalhada do projeto está localizada no projeto **aeedo-connect-doc** (dentro de `apps/aeedo-connect-doc`). Este é o ponto de referência principal para entender a arquitetura, fluxos e detalhes técnicos.
 
 ---
 
@@ -146,6 +153,50 @@ Após a execução (seja no Linux, macOS ou Windows), os serviços estarão disp
   Certifique-se de que Docker e Docker Compose estão instalados e no PATH do seu sistema.
 
 ---
+
+## Participantes
+
+### Liderança
+
+- **Gabriel Fernandes Carvalho**  
+  Matrícula: 2212144  
+  Líder Geral
+
+- **Guilherme Rezende Damaceno**  
+  Matrícula: 2212157  
+  Arquiteto de Software / Líder Técnico  
+
+- **Ruan de Freitas Moreira**  
+  Matrícula: 2211403  
+  Analista de Requisitos / Líder de Qualidade  
+
+### Equipe
+
+- **Calebe Rodrigues Rolim**  
+  Matrícula: 2221533  
+  Coordenador de Operações  
+
+- **Filipe Mota Tocchio Rodrigues**  
+  Matrícula: 2211830  
+  Product Owner  
+
+- **Filipe Gideão Rodrigues**  
+  Matrícula: 2211377  
+  Desenvolvedor Front-End  
+
+- **Gabriel Reis Costa**  
+  Matrícula: 2111508  
+  Designer UX/UI  
+
+- **José Vitor Pereira Silva**  
+  Matrícula: 2210867  
+  Analista de Qualidade  
+
+- **Gustavo Silva Batista Rosa**  
+  Matrícula: 2210552  
+  Desenvolvedor Back-End  
+
+
 
 ## Conclusão
 
