@@ -70,10 +70,10 @@ mkdir -p apps || { echo -e "${RED}Erro ao criar a pasta 'apps'. Encerrando.${RES
 cd apps || exit 1
 
 repos=(
-  "git@github.com:segabrielcarvalho/aeedo-connect-api.git"
-  "git@github.com:segabrielcarvalho/aeedo-connect-web.git"
-  "git@github.com:segabrielcarvalho/aeedo-connect-doc.git"
-  "git@github.com:segabrielcarvalho/aeedo-connect-admin.git"
+  "https://github.com/segabrielcarvalho/aeedo-connect-api.git"
+  "https://github.com/segabrielcarvalho/aeedo-connect-web.git"
+  "https://github.com/segabrielcarvalho/aeedo-connect-doc.git"
+  "https://github.com/segabrielcarvalho/aeedo-connect-admin.git"
 )
 
 echo -e "${CYAN}Clonando os repositórios...${RESET}"
