@@ -121,7 +121,7 @@ Após a execução (seja no Linux, macOS ou Windows), os serviços estarão disp
 
 Para realizar login no painel administrativo, utilize as seguintes credenciais padrão:
 
-- **Usuário:** `admin@example.com.br`
+- **Usuário:** `admin@example.com`
 - **Senha:** `12345678`
 
 ---
